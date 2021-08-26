@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOYOGA ContactUs</title>
+    <script src="https://kit.fontawesome.com/27bd1ef315.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 end-0 start-0 z-index-3">
+      <div class="container">
+        <a class="navbar-brand logo d-block" href="./index.html">DOYOGA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse position-lg-absolute top-50 start-50 translate-lg-middle" id="menu">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link px-5 fw-light" href="./course.html">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 fw-light" href="./yogaSpace.html">瑜珈空間</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 fw-light" href="./courseTime.html">當月課表</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a href="./reservationStep1.html" class="btn btn-outline-primary me-5">立即預約</a>
+              <a href="./contactUs.html" class="btn btn-outline-primary">聯絡我們</a>
+            </li>
+        </div>
+        <div class="navMenu d-none d-lg-flex">
+          <a href="./reservationStep1.html" class="btn btn-outline-primary me-6">立即預約</a>
+          <a href="./contactUs.html" class="btn btn-outline-primary">聯絡我們</a>
+        </div>
+      </div>
+    </nav>
+    <!--- social icons fixed right -->
+    <ul class="list-unstyled d-none d-lg-block mb-0 me-6 position-fixed top-50 end-0 translate-middle-y z-index-3">
+      <li class="mb-3">
+        <a href="#" class="d-block"><i class="fab fa-facebook fs-0"></i></a>
+      </li>
+      <li class="mb-3">
+        <a href="#" class="d-block"><i class="fab fa-instagram fs-0"></i></a>
+      </li>
+      <li>
+        <a href="#" class="d-block"><i class="fab fa-line fs-0"></i></a>
+      </li>
+    </ul>
+
+    <main class="main">
+      
+<section class="container pt-14 pt-md-17 pb-20 pb-md-19 pb-lg-22">
+  <h1 class="h3 text-center mb-10">聯絡我們</h1>
+  <div class="row">
+    <div class="col-md-10 col-lg-7 mx-auto mb-12 mb-lg-0">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.6191863287727!2d120.97918482077985!3d23.973902716536216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468d97bf0bec6fb%3A0x1d1251b1a9d53a1a!2z6Ie654Gj5Zyw55CG5Lit5b-D56KR!5e0!3m2!1szh-TW!2stw!4v1629705333737!5m2!1szh-TW!2stw"
+        loading="lazy" class="border-0 rounded w-100 mb-8"></iframe>
+      <h2 class="fs-4 mb-3">DOYOGA 教室位置</h2>
+      <p class="mb-3">高雄市苓雅區北信街 23 號 2 樓</p>
+      <p class="mb-0">如何前往：</p>
+      <div class="row">
+        <div class="col-md-7 col-lg-6">
+          <ul>
+            <li class="mb-8">1. 搭乘捷運：紅線到正義站 3 號出口，延正義路方向至北信街交叉口即可。</li>
+            <li class="mb-8">2. 搭乘公車：搭這些公車都可以抵達正義站 24B 25 33 50 76 77 77區 100</li>
+            <li>3. 開車前往北信街 32 號，教室旁有專屬停車場可以使用。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-10 col-lg-5 mx-auto">
+      <form class="p-8 p-md-10 bg-light rounded">
+        <h3 class="fs-5 mb-6 mb-md-8">意見回饋&問題詢問</h3>
+        <div class="mb-6">
+          <label for="username" class="form-label mb-3">姓名</label>
+          <input type="text" class="form-control form-control-sm" id="username" placeholder="請輸入您的姓名">
+        </div>
+        <div class="mb-6">
+          <label for="userEmail" class="form-label mb-3">電子信箱</label>
+          <input type="email" class="form-control form-control-sm" id="userEmail" placeholder="email@example.com">
+        </div>
+        <div class="mb-6">
+          <label for="phone" class="form-label mb-3">手機號碼</label>
+          <input type="tel" class="form-control form-control-sm" id="phone" placeholder="0912-345-678">
+        </div>
+        <div class="mb-6 mb-md-8">
+          <label for="message" class="form-label mb-3">意見回饋</label>
+          <textarea class="form-control form-control-sm" id="message" rows="10"></textarea>
+        </div>
+        <div class="text-end">
+          <a class="btn btn-sm btn-secondary rounded-2" href="#" role="button">送出</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="bg-primary text-white">
+      <div class="border-bottom border-white">
+        <div class="container">
+          <div class="row align-items-center py-10">
+            <div class="col-lg-8 mb-3 mb-lg-0">
+              <h2 class="mb-0 fs-4 fs-md-3">現在訂閱，獲得課程優惠碼！</h2>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱">
+                <button class="btn btn-secondary text-white" type="button">訂閱</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-10">
+        <div class="container position-relative">
+          <div class="d-flex justify-content-between align-item-start mb-3 mb-md-0">
+            <div class="contactList">
+              <h2 class="mb-3"><a class="footerLogo d-block" href="./index.html">DOYOGA</a></h2>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3"><a href="./course.html" class="text-white fw-light">課程介紹</a></li>
+                <li class="mb-3"><a href="./yogaSpace.html" class="text-white fw-light">瑜珈空間</a></li>
+                <li><a href="./courseTime.html" class="text-white fw-light">當月課表</a></li>
+              </ul>
+            </div>
+            <div class="socialList">
+              <ul class="list-unstyled d-flex mb-0">
+                <li class="me-3">
+                  <a href="javascript:;" class="text-white d-block"><i class="fab fa-facebook fs-4"></i></a>
+                </li>
+                <li class="me-3">
+                  <a href="javascript:;" class="text-white d-block"><i class="fab fa-instagram fs-4"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:;" class="text-white d-block"><i class="fab fa-line fs-4"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="position-md-absolute bottom-0 start-50 translate-middle-md-x mb-0">© 2021. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
