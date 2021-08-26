@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+@import "node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "./venders/bootstrap_utilities";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/aos/dist/aos";
+
+@import "./helpers/base";
+@import "./helpers/util";
+@import "./helpers/helper";
+@import "./helpers/mixin";
+
+@import "./components/form";
+@import "./components/card";
+@import "./components/map";
+@import "./components/table";
+@import "./components/modal";
+
+@import './layout';
+@import './pages/index';
+@import './pages/course';
+@import './pages/reservation';

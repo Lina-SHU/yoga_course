@@ -1,0 +1,18 @@
+.courseLevelList{
+  max-width: 1030px;
+  .card{
+    min-width: 330px;
+    &:hover{
+      border-color: #fff !important; 
+      i{
+        opacity: 1 !important;
+      }
+    }
+  }
+  .active{
+    border-color: #fff !important; 
+    i{
+      opacity: 1 !important;
+    }
+  }
+}

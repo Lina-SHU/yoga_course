@@ -1,0 +1,15 @@
+.course-img{
+  height: 218px;
+  @include media-breakpoint-up(md) {
+    height: 341px;
+  }
+}
+
+.basic-img{
+  width: 165px;
+  height: 165px;
+  @include media-breakpoint-up(md) {
+    width: 100%;
+    height: 418px;
+  }
+}

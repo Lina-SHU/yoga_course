@@ -1,0 +1,16 @@
+.logo{
+  background-image: url('../images/DOYOGA-logo.png');
+  @include title;
+}
+
+.footerLogo{
+  background-image: url('../images/DOYOGA.png');
+  @include title;
+}
+
+main{
+  margin-top: 80px;
+  @include media-breakpoint-up(lg) {
+    margin-top: 82px;
+  }
+}

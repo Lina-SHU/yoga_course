@@ -1,0 +1,145 @@
+---
+title: DOYOGA ReservationStep1
+layout: ./app/layout.ejs
+engine: ejs
+current: reservation step1
+---
+
+<section class="pt-14 pt-md-17 pb-20 pb-md-19 pb-lg-21">
+  <h1 class="fs-3 mb-6 text-center">立即預約</h1>
+  <ul class="list-group list-group-horizontal justify-content-center mb-10">
+    <li class="list-group-item bg-primary text-white border-0 rounded text-center py-5 px-7 px-md-5 px-lg-14 me-6 me-md-9">選擇方案</li>
+    <li class="list-group-item bg-light border-0 rounded text-center py-5 px-7 px-md-5 px-lg-14 me-6 me-md-9">填寫資料</li>
+    <li class="list-group-item bg-light border-0 rounded text-center py-5 px-7 px-md-5 px-lg-14">完成預約</li>
+  </ul>
+  <div class="container">
+    <ul class="row course">
+      <li class="col-lg-4 mb-6 mb-lg-0">
+        <div class="card flex-md-row flex-lg-column">
+          <img src="./assets/images/course1.jpg" class="card-img-top" alt="course1-img">
+          <div class="card-body p-8">
+            <h3 class="card-title fs-5 mb-2 text-center text-md-start text-lg-center">首次體驗</h3>
+            <p class="card-text fs-5 text-seconday  text-center text-md-start text-lg-center mb-3">NT $450 / 次</p>
+            <p class="card-text mb-12 mb-md-8 mb-lg-12">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。
+            </p>
+            <a href="#" class="btn btn-secondary stretched-link border-0 fs-5 w-100" data-level="首次體驗">選擇課程</a>
+          </div>
+        </div>
+      </li>
+      <li class="col-lg-4 mb-6 mb-lg-0">
+        <div class="card flex-md-row flex-lg-column">
+          <img src="./assets/images/course2.jpg" class="card-img-top" alt="course2-img">
+          <div class="card-body p-8">
+            <h3 class="card-title fs-5 mb-2 text-center text-md-start text-lg-center">短期體驗</h3>
+            <p class="card-text fs-5 text-seconday  text-center text-md-start text-lg-center mb-3">NT $1800 / 月</p>
+            <p class="card-text mb-12 mb-md-8 mb-lg-12">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。
+            </p>
+            <a href="#" class="btn btn-secondary stretched-link border-0 fs-5 w-100" data-level="短期體驗">選擇課程</a>
+          </div>
+        </div>
+      </li>
+      <li class="col-lg-4 mb-6 mb-lg-0">
+        <div class="card flex-md-row flex-lg-column">
+          <img src="./assets/images/course3.jpg" class="card-img-top" alt="course3-img">
+          <div class="card-body p-8">
+            <h3 class="card-title fs-5 mb-2 text-center text-md-start text-lg-center">長期體驗</h3>
+            <p class="card-text fs-5 text-seconday  text-center text-md-start text-lg-center mb-3">NT $5600 / 季</p>
+            <p class="card-text mb-12 mb-md-8 mb-lg-12">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。
+            </p>
+            <a href="#" class="btn btn-secondary stretched-link border-0 fs-5 w-100" data-level="長期體驗">選擇課程</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div> 
+  <div class="courseLevel d-none">
+    <div class="text-center py-6">
+      <i class="material-icons">arrow_drop_down</i>
+    </div>
+    <div class="bg-container">
+      <div class="container mb-10 mb-lg-12">
+        <div class="bg-primary pt-12 pb-17">
+          <h3 class="fs-3 text-center text-white mb-10">選擇課程階級</h3>
+          <ul class="courseLevelList d-flex flex-nowrap dragList mx-auto">
+            <li class="courseLevelList-item card bg-secondary border border-4 text-white rounded p-7 me-7 active" data-course="基礎">
+              <a class="card-body p-0 position-relative text-white">
+                <i class="material-icons fs-1 position-absolute top-0 end-0 opacity-50">check_circle_outline</i>
+                <h4 class="card-title fs-3 mb-0">基礎 Basic</h4>
+                <p class="mb-6">基礎課程
+                  <span class="d-inline-block rounded fs-8 bg-primary fw-light text-white px-6 py-2 ms-3">60 min</span>
+                </p>
+                <ul class="list-style">
+                  <li class="mb-2">入體位法動作解說</li>
+                  <li class="mb-2">瑜珈基礎動作、順位</li>
+                  <li>適合任何階段練習者</li>
+                </ul>
+              </a>
+            </li>
+            <li class="courseLevelList-item card bg-secondary border border-4 border-secondary rounded p-7 me-7" data-course="中階">
+              <a href="javascript:;" class="card-body p-0 position-relative text-white">
+                <i class="material-icons fs-1 position-absolute top-0 end-0 opacity-50">check_circle_outline</i>
+                <h4 class="card-title fs-3 mb-0">中階 Intermediate</h4>
+                <p class="mb-6">艾揚格、哈達、寰宇
+                  <span class="d-inline-block rounded fs-8 bg-primary fw-light text-white px-6 py-2 ms-3">60 min</span>
+                </p>
+                <ul class="list-style">
+                  <li class="mb-2">刺激身體七個層次為核心</li>
+                  <li class="mb-2">結合流暢體位法練習、呼吸、觀想</li>
+                  <li>適合半年以上練習者</li>
+                </ul>
+              </a>
+            </li>
+            <li class="courseLevelList-item card bg-secondary border border-4 border-secondary rounded p-7" data-course="高階">
+              <a href="javascript:;" class="card-body p-0 position-relative text-white">
+                <i class="material-icons fs-1 position-absolute top-0 end-0 opacity-50">check_circle_outline</i>
+                <h4 class="card-title fs-3 mb-0">高階 Advanced</h4>
+                <p class="mb-6">阿斯坦加、陰陽
+                  <span class="d-inline-block rounded fs-8 bg-primary fw-light text-white px-6 py-2 ms-3">60 min</span>
+                </p>
+                <ul class="list-style">
+                  <li class="mb-2">充分打開身體每個部位</li>
+                  <li class="mb-2">顯著提升力量與柔軟度</li>
+                  <li>適合一年以上練習者</li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <p class="mb-2">您選擇的是</p>
+      <h3 class="d-inline-block fs-5 border-bottom border-2 border-secondary mb-0"><span class="courseName">首次體驗</span>課程-<span class="courseTypeName"></span></h3>
+    </div>    
+  </div>
+  <div class="container mt-10">
+    <div class="row">
+      <div class="col-md-8 col-lg-6 mx-auto">
+        <h2 class="fs-3 mb-6 text-center">預約須知</h2>
+        <ul class="px-lg-14">
+          <li>
+            <p class="mb-2">1. 如果有特殊體質、特殊狀況，請主動告知。</p>
+          </li>
+          <li>
+            <p class="mb-2">2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</p>
+          </li>
+          <li>
+            <p class="mb-2">3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</p>
+          </li>
+          <li>
+            <p class="mb-0">4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="reservationBtn d-none container mt-10 mt-lg-12">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="d-grid gap-2">
+          <a href="./reservationStep2.html" class="btn btn-secondary fs-5 rounded-2">繼續預約</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

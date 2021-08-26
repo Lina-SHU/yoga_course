@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <script src="https://kit.fontawesome.com/27bd1ef315.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 end-0 start-0 z-index-3">
+      <div class="container">
+        <a class="navbar-brand logo d-block" href="./index.html">DOYOGA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse position-lg-absolute top-50 start-50 translate-lg-middle" id="menu">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link px-5 fw-light" href="./course.html">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 fw-light" href="./yogaSpace.html">瑜珈空間</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 fw-light" href="./courseTime.html">當月課表</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a href="./reservationStep1.html" class="btn btn-outline-primary me-5">立即預約</a>
+              <a href="./contactUs.html" class="btn btn-outline-primary">聯絡我們</a>
+            </li>
+        </div>
+        <div class="navMenu d-none d-lg-flex">
+          <a href="./reservationStep1.html" class="btn btn-outline-primary me-6">立即預約</a>
+          <a href="./contactUs.html" class="btn btn-outline-primary">聯絡我們</a>
+        </div>
+      </div>
+    </nav>
+    <!--- social icons fixed right -->
+    <ul class="list-unstyled d-none d-lg-block mb-0 me-6 position-fixed top-50 end-0 translate-middle-y z-index-3">
+      <li class="mb-3">
+        <a href="#" class="d-block"><i class="fab fa-facebook fs-0"></i></a>
+      </li>
+      <li class="mb-3">
+        <a href="#" class="d-block"><i class="fab fa-instagram fs-0"></i></a>
+      </li>
+      <li>
+        <a href="#" class="d-block"><i class="fab fa-line fs-0"></i></a>
+      </li>
+    </ul>
+
+    <main class="main">
+      <%- contents %>
+    </main>
+
+    <footer class="bg-primary text-white">
+      <div class="border-bottom border-white">
+        <div class="container">
+          <div class="row align-items-center py-10">
+            <div class="col-lg-8 mb-3 mb-lg-0">
+              <h2 class="mb-0 fs-4 fs-md-3">現在訂閱，獲得課程優惠碼！</h2>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱">
+                <button class="btn btn-secondary text-white" type="button">訂閱</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-10">
+        <div class="container position-relative">
+          <div class="d-flex justify-content-between align-item-start mb-3 mb-md-0">
+            <div class="contactList">
+              <h2 class="mb-3"><a class="footerLogo d-block" href="./index.html">DOYOGA</a></h2>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3"><a href="./course.html" class="text-white fw-light">課程介紹</a></li>
+                <li class="mb-3"><a href="./yogaSpace.html" class="text-white fw-light">瑜珈空間</a></li>
+                <li><a href="./courseTime.html" class="text-white fw-light">當月課表</a></li>
+              </ul>
+            </div>
+            <div class="socialList">
+              <ul class="list-unstyled d-flex mb-0">
+                <li class="me-3">
+                  <a href="javascript:;" class="text-white d-block"><i class="fab fa-facebook fs-4"></i></a>
+                </li>
+                <li class="me-3">
+                  <a href="javascript:;" class="text-white d-block"><i class="fab fa-instagram fs-4"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:;" class="text-white d-block"><i class="fab fa-line fs-4"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="position-md-absolute bottom-0 start-50 translate-middle-md-x mb-0">© 2021. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
