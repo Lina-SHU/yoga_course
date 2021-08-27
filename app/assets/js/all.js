@@ -34,10 +34,13 @@ if (document.title ==="DOYOGA ReservationStep1"){
   const courseLevel = document.querySelector('.courseLevel');
   const reservationBtn = document.querySelector('.reservationBtn');
   const courseName = document.querySelector('.courseName');
+  let reservationName = "";
+  let reservationLevel = '基礎';
   
   course.addEventListener('click', function (e) {
     e.preventDefault();
     courseName.textContent = e.target.dataset.level;
+    reservationName = e.target.dataset.level;
     displayNoneOtherCourses(e);
     showdetails();
     currentCard(e);
@@ -84,6 +87,7 @@ if (document.title ==="DOYOGA ReservationStep1"){
       removeActive();
       e.currentTarget.classList.add('active');
       courseTypeName.textContent = e.currentTarget.dataset.course;
+      reservationLevel = e.currentTarget.dataset.course;
     })
   })
 
@@ -92,7 +96,22 @@ if (document.title ==="DOYOGA ReservationStep1"){
       item.classList.remove('active');
     })
   }
-  // ***** select course level end*****
+  // ***** select course level end *****
+
+  // ***** 預約監聽 localStorage *****
+  const goStep2Btn = document.querySelector('.goStep2Btn');
+
+  goStep2Btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    localStorage.setItem('reservationCourse', `${reservationName}課程-${reservationLevel}`);
+    window.location.href = '../../reservationStep2.html';
+  })
+  // ***** 預約監聽 localStorage end *****
+}
+
+if (document.title === "DOYOGA ReservationStep2" || document.title === "DOYOGA ReservationStep3"){
+  const courseName = document.querySelector('.courseName');
+  courseName.textContent = localStorage.getItem('reservationCourse') || '首次體驗課程-基礎';
 }
 
 if (document.title === "DOYOGA Index" || document.title === "DOYOGA Course" || document.title === "DOYOGA yogaSpace" || document.title === "DOYOGA Course Time"){
