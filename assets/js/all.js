@@ -103,7 +103,7 @@ if (document.title === "DOYOGA ReservationStep1") {
   goStep2Btn.addEventListener('click', function (e) {
     e.preventDefault();
     localStorage.setItem('reservationCourse', "".concat(reservationName, "\u8AB2\u7A0B-").concat(reservationLevel));
-    window.location.href = '../../reservationStep2.html';
+    window.location.href = './reservationStep2.html';
   }); // ***** 預約監聽 localStorage end *****
 }
 
