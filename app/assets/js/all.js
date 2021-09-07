@@ -201,7 +201,7 @@ if (document.title === "DOYOGA Index"){
     let str = "";
     data.forEach((item) => {
       str += `
-        <div class="d-flex d-md-none bg-white rounded align-items-center p-6 mb-3">
+        <li class="d-flex d-md-none bg-white rounded align-items-center p-6 mb-3">
           <div class="flex-shrink-0">
             <img src="${item.pic}" alt="user-img">
           </div>
@@ -216,7 +216,7 @@ if (document.title === "DOYOGA Index"){
             </ul>
             <p class="mb-0">${item.message}</p>
           </div>
-        </div>
+        </li>
       `
     })
     mobileMessage.innerHTML = str;

@@ -25,3 +25,62 @@
     background: transparent;
   }
 }
+
+.btn-outline-primary:hover{
+  color: $white;
+}
+
+.btn-secondary{
+  color: $white;
+  &:hover{
+    background: $primary;
+    color: $white;
+  }
+}
+
+.btn-light{
+  &:hover{
+    background: $secondary;
+    color: $white;
+    border-color: $secondary;
+  }
+}
+
+.dragList{
+  overflow-x: auto;
+  cursor: grab;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+.dragList2nd{
+  overflow-x: auto;
+  cursor: grab;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+.linkBtn{
+  transition: all .4s;
+  &:hover{
+    transform: scaleY(1.4);
+  }  
+}
+
+.isDisabled{
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.list-style{
+  padding-left: $spacer;
+  li::before {
+    content: "・"; 
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -$spacer;
+  }
+}
