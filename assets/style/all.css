@@ -19788,6 +19788,31 @@ textarea {
   border-bottom-right-radius: 0.25rem;
 }
 
+.select-wrap {
+  position: relative;
+}
+
+.select-wrap .form-select {
+  background-image: none;
+}
+
+.select-wrap::after {
+  font-family: "Material Icons";
+  content: "\e5cf";
+  height: 24px;
+  font-size: 24px;
+  top: 9px;
+  left: 77px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+}
+
 .card .card-img-top {
   height: 243px;
 }
