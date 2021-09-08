@@ -19652,8 +19652,8 @@ fieldset:disabled .btn {
   }
 }
 
-body {
-  overflow-x: hidden;
+main, section, footer {
+  overflow: hidden;
 }
 
 i {
