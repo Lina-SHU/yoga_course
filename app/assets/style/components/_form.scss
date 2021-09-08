@@ -5,3 +5,21 @@
   }
 }
 
+.select-wrap{
+  position: relative;
+  .form-select{
+    background-image: none;
+  }
+  &::after {
+    font-family: "Material Icons";
+    content: "\e5cf";
+    height: 24px;
+    font-size: 24px;
+    top: 9px;
+    left: 77px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    pointer-events:none;
+  }
+}
